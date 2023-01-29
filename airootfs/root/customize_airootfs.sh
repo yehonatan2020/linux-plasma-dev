@@ -27,52 +27,30 @@ rm -rf usr/bin/balooctl
 rm -rf usr/bin/baloosearch
 rm -rf usr/bin/balooshow
 rm -rf usr/lib/baloo_file
+rm -rf usr/lib/libexec/baloo_file
 rm -rf usr/lib/baloo_file_extractor
+rm -rf usr/lib/libexec/baloo_file_extractor
 rm -rf usr/lib/baloorunner
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/avahi-discover.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/avahi-discover.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/bssh.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/bssh.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/stoken-gui.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/stoken-gui.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/stoken-gui-small.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/stoken-gui-small.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/bvnc.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/bvnc.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/cmake-gui.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/cmake-gui.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/qv4l2.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/qv4l2.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/qvidcap.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/qvidcap.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/htop.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/htop.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/vim.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/vim.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/org.kde.klipper.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/org.kde.klipper.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/designer.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/designer.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/assistant.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/assistant.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/linguist.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/linguist.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/qdbusviewer.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/qdbusviewer.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/org.gnome.gedit.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/org.gnome.gedit.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/org.kde.gwenview.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/org.kde.gwenview.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/lstopo.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/lstopo.desktop
-sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/org.kde.ark.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/org.kde.ark.desktop
-sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/guake.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/guake.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/guake-prefs.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/guake-prefs.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/org.kde.kmenuedit.desktop
-sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/org.kde.kmenuedit.desktop
 sudo systemctl enable hv_fcopy_daemon.service
 sudo systemctl enable hv_kvp_daemon.service
 sudo systemctl enable hv_vss_daemon.service
